@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		528546D71EF3B99C00E9F518 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528546D61EF3B99C00E9F518 /* SwiftViewController.swift */; };
+		528546DA1EF3B9E000E9F518 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 528546D91EF3B9E000E9F518 /* Utility.m */; };
 		52F521BC1EF3B797002BC7B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F521BB1EF3B797002BC7B6 /* main.m */; };
 		52F521BF1EF3B797002BC7B6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F521BE1EF3B797002BC7B6 /* AppDelegate.m */; };
 		52F521C21EF3B797002BC7B6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F521C11EF3B797002BC7B6 /* ViewController.m */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		528546D51EF3B99C00E9F518 /* LearnSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LearnSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		528546D61EF3B99C00E9F518 /* SwiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
+		528546D81EF3B9E000E9F518 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		528546D91EF3B9E000E9F518 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		52F521B71EF3B797002BC7B6 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F521BB1EF3B797002BC7B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		52F521BD1EF3B797002BC7B6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,10 +64,14 @@
 		52F521B91EF3B797002BC7B6 /* LearnSwift */ = {
 			isa = PBXGroup;
 			children = (
+				528546D51EF3B99C00E9F518 /* LearnSwift-Bridging-Header.h */,
 				52F521BD1EF3B797002BC7B6 /* AppDelegate.h */,
 				52F521BE1EF3B797002BC7B6 /* AppDelegate.m */,
 				52F521C01EF3B797002BC7B6 /* ViewController.h */,
 				52F521C11EF3B797002BC7B6 /* ViewController.m */,
+				528546D81EF3B9E000E9F518 /* Utility.h */,
+				528546D91EF3B9E000E9F518 /* Utility.m */,
+				528546D61EF3B99C00E9F518 /* SwiftViewController.swift */,
 				52F521C31EF3B798002BC7B6 /* Main.storyboard */,
 				52F521C61EF3B798002BC7B6 /* Assets.xcassets */,
 				52F521C81EF3B798002BC7B6 /* LaunchScreen.storyboard */,
@@ -110,6 +120,7 @@
 				TargetAttributes = {
 					52F521B61EF3B797002BC7B6 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,7 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528546D71EF3B99C00E9F518 /* SwiftViewController.swift in Sources */,
 				52F521C21EF3B797002BC7B6 /* ViewController.m in Sources */,
+				528546DA1EF3B9E000E9F518 /* Utility.m in Sources */,
 				52F521BF1EF3B797002BC7B6 /* AppDelegate.m in Sources */,
 				52F521BC1EF3B797002BC7B6 /* main.m in Sources */,
 			);
@@ -272,10 +285,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.LearnSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LearnSwift/LearnSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -283,10 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				INFOPLIST_FILE = LearnSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.LearnSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LearnSwift/LearnSwift-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -309,6 +331,7 @@
 				52F521D01EF3B798002BC7B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
