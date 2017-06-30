@@ -1,5 +1,4 @@
-## This is a demo shows how to Call Objective-C in Swift and how how to Call Swift in Objective-C
----
+
 
 # Swift和Objective-C的相互调用
 
@@ -83,4 +82,5 @@
 三) 最后
 =====
 
+*** 既然来了，顺便点一下star,你的评价很重要哦。***
 我的微博 [@云峰笔记](http://weibo.com/fnote) 简书 [@陈云峰](http://www.jianshu.com/u/abe46f5b31b9) 多多关注，多提意见，互相学习，互相进步！
